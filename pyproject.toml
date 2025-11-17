@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "comfyui-agent"
+version = "0.1.0"
+description = "LangGraph agent for ComfyUI image generation"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "agent", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langgraph = "^0.2.48"
+langchain = "^0.3.7"
+langchain-groq = "^0.2.1"
+langchain-core = "^0.3.15"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+websockets = "^13.1"
+pillow = "^11.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
